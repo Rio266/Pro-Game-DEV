@@ -4,9 +4,6 @@ screen = pygame.display.set_mode((400, 400))
 pygame.display.set_caption("Hello")
 run = True
 while run:
-    # for i in pygame.event.get():
-    #     if i.type == pygame.QUIT:
-    #         run = False
     screen.fill("blue")
     on = pygame.image.load("images\\bulb_on.jpg")
     on = pygame.transform.scale(on, (300, 300))
