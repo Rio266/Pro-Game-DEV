@@ -1,5 +1,5 @@
 import pygame
-import random
+import random, sys
 pygame.init()
 WIDTH = 1000
 HEIGHT = 700
@@ -74,6 +74,8 @@ def Reset():
     global score, spawn_timer, game_over
     player.health = 100
     player.rect.center = (WIDTH // 2, HEIGHT // 2)
+    for i in enemies:
+        i.kill()
     enemies.empty()
     score = 0
     spawn_timer = 0
